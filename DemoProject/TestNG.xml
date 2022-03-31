@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+	<test name="Login into application">
+		<classes>
+			<class name="loginUsingDataProviders_5.Login" />
+		</classes>
+		</test>
+</suite>
+
+<!-- Passing the data on to the test cases is one of the core functionalities. There are many ways to pass the data to test cases. One among them is Data Providers annotation.
+1. Data providers annotation
+2. How to use data providers annotation to send data?
+3. Disadvantages of using parameters for data-driven testing. -->
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+	<test name="Login into application">
+		<classes>
+			<class name="loginUsingDataProviders.Login" />
+		</classes>
+		</test>
+</suite> -->
+
+<!-- 1. How to use parameters in TestNG for data-driven testing?
+2. Disadvantages of using Parameters for data-driven testing.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+	<test name="BothCorrect">
+		<parameter name="username" value="Admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		<classes>
+			<class name="loginUsingParameters.BothCorrect" />
+		</classes>
+	</test>
+	<test name="BothInCorrect">
+		<parameter name="username" value="testdummy"></parameter>
+		<parameter name="password" value="sendDummy"></parameter>
+		<classes>
+			<class name="loginUsingParameters.BothInCorrect" />
+		</classes>
+	</test>
+	<test name="CorrectUserName">
+		<parameter name="username" value="Admin"></parameter>
+		<parameter name="password" value="sendDummy"></parameter>
+		<classes>
+			<class name="loginUsingParameters.CorrectUserName" />
+		</classes>
+	</test>
+	<test name="CorrectPassword">
+		<parameter name="username" value="testdummy"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		<classes>
+			<class name="loginUsingParameters.CorrectPassword" />
+		</classes>
+	</test>
+</suite> -->
+
+<!-- Using seperate class and run the tests individually <?xml version="1.0" 
+	encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" 
+	> <suite name="Login Suite"> <test name="BothCorrect"> <classes> <class name="loginTestcasesUsingClasses.BothCorrect" 
+	/> </classes> </test> <test name="BothInCorrect"> <classes> <class name="loginTestcasesUsingClasses.BothInCorrect" 
+	/> </classes> </test> <test name="CorrectUserName"> <classes> <class name="loginTestcasesUsingClasses.CorrectUserName" 
+	/> </classes> </test> <test name="CorrectPassword"> <classes> <class name="loginTestcasesUsingClasses.CorrectPassword" 
+	/> </classes> </test> </suite> -->
+
+
+
+
+<!-- Login Test Cases Package
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" 
+	> At the top of the suite file [C:\Users\sathy\eclipse-workspace\DemoProject\TestNG.xml] 
+	<suite name = "Login Suite"> <test name = "Login Test Cases"> <classes> <class 
+	name = "loginTestCases.BothCorrect"/> <class name = "loginTestCases.BothInCorrect"/> 
+	<class name = "loginTestCases.CorrectUserName"/> <class name = "loginTestCases.CorrectPassword"/> 
+	</classes> </test> </suite> -->
